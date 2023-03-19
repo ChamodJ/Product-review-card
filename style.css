@@ -1,7 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: hsl(30, 38%, 92%);
-    min-height: 100vh;
+    min-height: 95vh;
     display: grid;
     place-items: center;
     margin-top: 0;
@@ -100,22 +100,28 @@ img {
         display: flex;
         margin: 0;
         min-height: 85vh;
+        max-height: 400px;
         width: 900px;
     }
 
     .img-div{
-        height: 90vh;
+        
         float: left;
         width: 50%;
+        
     }
 
+    img {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 25px;
+        height: 100%;
+    }
     .img-mobile {
         display: none;
     }
 
     .img-desktop {
         display: block;
-        height: 90vh;
     }
 
     .info-div {
@@ -126,38 +132,40 @@ img {
     .discription-div {
         padding: 35px;
         margin-bottom: 0px;
+        max-height: 40vh;
+        
      }
 
     .discription-div p {
-        font-size: 15px;
+        font-size: 2vh;
     }
 
     .discription-div h1 {
-        font-size: 45px;
-    }
-
-    .price-div {
-        height: 5vh;
-        align-items: center;
-        
+        font-size: 5vh;
     }
 
     .discount-price{
-        font-size: 45px;
+        font-size: 5vh;
     }
     
     .price{
-        font-size: 35px;
-        margin-top: 45px;
-        margin-left: 50px;
+        font-size: 3vh;
+    }
+
+    .cart-btn-div {
+        display: flex;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
     }
 
     .cart-btn {
         width: 290px;
         border-radius: 10px;
         font-size: 1rem;
-        padding: 10px 35px; 
-        text-align: center;  
+        padding: 10px 35px;
+        
+        
     }
     
     .cart-icon {
